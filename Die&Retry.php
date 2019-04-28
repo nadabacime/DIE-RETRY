@@ -32,14 +32,14 @@
 	<!-------------------------------DEBUT HTML --------------------------------- -->
 	<header class="container-fluid">
 		<div id="logocenter">
-			<img src="Logo_D&R.png">
+			<a href=""><img src="007.png"></a>
 		</div>
 	</header>
 	<section class="container-fluid">
 		<div class="container">
 			<!---------------------------------- ADD GAME ---------------------------------- -->
 			<form method="POST">
-				<input type="submit" name="btnAdd" value="Ajouter un jeu"/>
+				<input id="btnAdd" type="submit" name="btnAdd" value="Ajouter un jeu"/>
 			</form>
 			<?php
 			if(isset($_POST['btnAdd'])){
@@ -85,6 +85,7 @@
 								<input id="edit" type="text" name="edit" placeholder=" Autre">
 							</select>
 							<input id="button" type="submit" name="addConfirm" value="Valider">
+							<a href=""><input type="button" id="annuler" value="Annuler"></a>
 						</form>
 					</div>
 					<?php
@@ -232,6 +233,7 @@
 							};
 							echo "<input type='hidden' name='hidden' value=" .$idSelected . " >";
 							echo '<input id="button" type="submit" name="UpdateBtn" value="Modifier">';
+							echo"<a href=''><input type='button' id='annuler' value='Annuler'></a>";
 							echo "</form>";
 							echo "</div>";
 						};
@@ -262,6 +264,9 @@
 				</div>
 		</div>
 	</section>
+	<footer>
+		<p id="copyright">Copyright &copy; 2019 Nada Bacime. Tous droits réservés.</p>
+	</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
